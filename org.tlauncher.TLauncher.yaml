@@ -92,7 +92,7 @@ modules:
           - "# Use gamemode if available"
           - GAMEMODEAUTO="libgamemodeauto.so.0"
           - export LD_PRELOAD="${GAMEMODEAUTO}${LD_PRELOAD:+:$LD_PRELOAD}"
-          - java -jar /app/extra/TLauncher.jar $@
+          - exec java -jar /app/extra/TLauncher.jar "$@"
         dest-filename: tlauncher
       - type: file
         path: org.tlauncher.TLauncher.desktop
