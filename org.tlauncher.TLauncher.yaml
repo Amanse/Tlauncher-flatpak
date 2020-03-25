@@ -3,10 +3,10 @@ app-id: org.tlauncher.TLauncher
 command: tlauncher
 
 base: io.atom.electron.BaseApp
-base-version: '19.08'
+base-version: "19.08"
 
 runtime: org.freedesktop.Platform
-runtime-version: '19.08'
+runtime-version: "19.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -90,7 +90,7 @@ modules:
           - mv TLauncher*.jar TLauncher.jar
       - type: script
         commands:
-          - '# Use gamemode if available'
+          - "# Use gamemode if available"
           - GAMEMODEAUTO="libgamemodeauto.so.0"
           - export LD_PRELOAD="${GAMEMODEAUTO}${LD_PRELOAD:+:$LD_PRELOAD}"
           - java -jar /app/extra/TLauncher.jar $@
