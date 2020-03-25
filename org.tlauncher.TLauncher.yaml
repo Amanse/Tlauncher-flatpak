@@ -20,7 +20,6 @@ finish-args:
   - --persist=.minecraft
   # X11 + XShm
   - --socket=x11
-  - --socket=wayland
   - --share=ipc
   # OpenGL
   - --device=dri
