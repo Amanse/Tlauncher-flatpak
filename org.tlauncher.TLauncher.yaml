@@ -1,11 +1,12 @@
+---
 app-id: org.tlauncher.TLauncher
 command: tlauncher
 
 base: io.atom.electron.BaseApp
-base-version: '19.08'
+base-version: "19.08"
 
 runtime: org.freedesktop.Platform
-runtime-version: '19.08'
+runtime-version: "19.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -73,7 +74,7 @@ modules:
     sources:
       - type: extra-data
         filename: TLauncher.zip
-        url: https://dl2.tlauncher.org/f.php
+        url: https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.69.zip
         sha256: 5aee06077942a4c2c1def6a532fc3232e87acdf7d806b018ba5a9ff48dd52acd
         size: 2664219
         x-checker-data:
@@ -88,7 +89,7 @@ modules:
           - mv TLauncher*.jar TLauncher.jar
       - type: script
         commands:
-          - '# Use gamemode if available'
+          - "# Use gamemode if available"
           - GAMEMODEAUTO="libgamemodeauto.so.0"
           - export LD_PRELOAD="${GAMEMODEAUTO}${LD_PRELOAD:+:$LD_PRELOAD}"
           - exec java -jar /app/extra/TLauncher.jar "$@"
