@@ -1,12 +1,11 @@
----
 app-id: org.tlauncher.TLauncher
 command: tlauncher
 
 base: io.atom.electron.BaseApp
-base-version: "19.08"
+base-version: '19.08'
 
 runtime: org.freedesktop.Platform
-runtime-version: "19.08"
+runtime-version: '19.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -54,7 +53,8 @@ modules:
     sources:
       - type: archive
         url: https://github.com/FeralInteractive/gamemode/archive/1.5.1.tar.gz
-        sha256: c510fd1391263c6fa05570de840865b1f0c8d573a7acbf488027327ae5a3bbde
+        sha256: f5b1aae7d8f2d9da5dae828431b6df7757b31de91b5298372e9247f740f204d0
+        size: 72555
     cleanup:
       - /include
 
@@ -89,7 +89,7 @@ modules:
           - mv TLauncher*.jar TLauncher.jar
       - type: script
         commands:
-          - "# Use gamemode if available"
+          - '# Use gamemode if available'
           - GAMEMODEAUTO="libgamemodeauto.so.0"
           - export LD_PRELOAD="${GAMEMODEAUTO}${LD_PRELOAD:+:$LD_PRELOAD}"
           - exec java -jar /app/extra/TLauncher.jar "$@"
