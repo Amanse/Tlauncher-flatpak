@@ -42,6 +42,16 @@
   </content_rating>
 
   <releases>
+    <release date="2020-07-02" version="2.71">
+      <description>
+        <ul>
+          <li>Updated some icons in the mod-pack system.</li>
+          <li>Some library repositories have been replaced with new ones.</li>
+          <li>Fixed null error when connecting to server.</li>
+          <li>Improvements and fixes for the stability of the program.</li>
+        </ul>
+      </description>
+    </release>
     <release date="2020-02-27" version="2.69">
       <description>
         <ul>
