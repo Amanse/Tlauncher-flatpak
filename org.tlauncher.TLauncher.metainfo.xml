@@ -42,6 +42,15 @@
   </content_rating>
 
   <releases>
+    <release date="2020-07-12" version="2.72">
+      <description>
+        <ul>
+          <li>Fixed a problem with achievements;</li>
+          <li>Fixed SSL problem when launching the TLauncher;</li>
+          <li>Fixed a crash game related to memory;</li>
+        </ul>
+      </description>
+    </release>
     <release date="2020-07-02" version="2.71">
       <description>
         <ul>
