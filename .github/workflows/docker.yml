@@ -13,10 +13,6 @@ jobs:
     strategy:
       matrix:
         runtime:
-          - name: freedesktop-21.08
-            packages: org.freedesktop.Platform//21.08 org.freedesktop.Sdk//21.08
-            remote: flathub
-
           - name: openjdk-11
             packages: org.freedesktop.Sdk.Extension.openjdk11
             remote: flathub
