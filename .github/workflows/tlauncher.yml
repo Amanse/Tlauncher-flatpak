@@ -10,10 +10,8 @@ jobs:
     container:
       image: bilelmoussaoui/flatpak-github-actions:gnome-40
       options: --privileged
-    container:
       image: bilelmoussaoui/flatpak-github-actions:freedesktop-21.08
       options: --privileged
-    container:
       image: saimansingh/flatpak-image:openjdk-11
       options: --privileged
     steps:
