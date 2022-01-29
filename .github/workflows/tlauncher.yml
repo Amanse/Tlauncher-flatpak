@@ -8,7 +8,7 @@ jobs:
     name: "Flatpak"
     runs-on: ubuntu-latest
     container:
-      image: saimansingh/flatpak-github-actions:AllInOne
+      image: saimansingh/flatpak-image:AllInOne
       options: --privileged
     steps:
     - uses: actions/checkout@v2
