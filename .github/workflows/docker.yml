@@ -1,6 +1,4 @@
 on:
-  schedule:
-    - cron: "0 0 * * */7" # This should run every hour
   workflow_dispatch:
 
 name: Docker images
@@ -13,8 +11,8 @@ jobs:
     strategy:
       matrix:
         runtime:
-          - name: openjdk-11
-            packages: org.freedesktop.Sdk.Extension.openjdk11/x86_64/20.08
+          - name: AllInOne
+            packages: org.freedesktop.Sdk.Extension.openjdk11/x86_64/20.08 org.freedesktop.Platform//21.08 org.freedesktop.Sdk//21.08 io.atom.electron.BaseApp//21.08
             remote: flathub
 
     services:
