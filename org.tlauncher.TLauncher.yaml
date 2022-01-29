@@ -76,11 +76,7 @@ modules:
         filename: TLauncher.zip
         url: https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.841.zip
         sha256:  4290beae8551ab1246d15e4ea4dad58e8d93bf60b5e6acaebdc39eac5d0bb1db
-        size: 4069832
-        x-checker-data:
-          type: rotating-url
-          url: https://tlauncher.org/jar
-          pattern: https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-([0-9.]+).zip
+        size: 4324807
       - type: script
         dest-filename: apply_extra
         commands:
