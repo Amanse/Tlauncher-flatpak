@@ -14,7 +14,7 @@ jobs:
       matrix:
         runtime:
           - name: openjdk-11
-            packages: org.freedesktop.Sdk.Extension.openjdk11
+            packages: org.freedesktop.Sdk.Extension.openjdk11/x86_64/20.08
             remote: flathub
 
     services:
