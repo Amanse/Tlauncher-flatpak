@@ -8,11 +8,7 @@ jobs:
     name: "Flatpak"
     runs-on: ubuntu-latest
     container:
-      image: bilelmoussaoui/flatpak-github-actions:gnome-40
-      options: --privileged
-      image: bilelmoussaoui/flatpak-github-actions:freedesktop-21.08
-      options: --privileged
-      image: saimansingh/flatpak-image:openjdk-11
+      image: saimansingh/flatpak-github-actions:AllInOne
       options: --privileged
     steps:
     - uses: actions/checkout@v2
