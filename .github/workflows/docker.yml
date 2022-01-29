@@ -12,7 +12,7 @@ jobs:
       matrix:
         runtime:
           - name: AllInOne
-            packages: org.freedesktop.Sdk.Extension.openjdk11/x86_64/20.08 org.freedesktop.Platform//21.08 org.freedesktop.Sdk//21.08 io.atom.electron.BaseApp//21.08
+            packages: org.freedesktop.Sdk.Extension.openjdk11/x86_64/20.08 org.freedesktop.Platform//21.08 org.freedesktop.Sdk//21.08 io.atom.electron.BaseApp//19.08
             remote: flathub
 
     services:
