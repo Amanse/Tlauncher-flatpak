@@ -72,4 +72,4 @@ jobs:
           context: .
           file: ${{ matrix.runtime.name }}.Dockerfile
           push: true
-          tags: bilelmoussaoui/flatpak-github-actions:${{ matrix.runtime.name }}
+          tags: saimansingh/flatpak-image:${{ matrix.runtime.name }}
